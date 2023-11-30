@@ -1,34 +1,68 @@
 import React from "react";
-import { CardMedia } from "@mui/material";
-import './degreeList.css';
-function DegList({data}) {
-    const Mapping=({item})=>
-    {
-        return(
-            <div>
-              <div className="coursecontainer">
-              <div className="courseimagecontainer">
-              <img className="course" src={item.url} alt="img" />
-                </div>
-                <p>{item.name}</p>
-              </div>
-            </div>
-            
-
-        )
-    };
+import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
+import "./degreeList.css";
+import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
+import LocationOnTwoToneIcon from "@mui/icons-material/LocationOnTwoTone";
+function DegList({ data }) {
+  const Mapping = ({ item }) => {
+    return (
+      <div>
+        <div className="coursecontainer">
+          <p>{item.name}</p>
+        </div>
+      </div>
+    );
+  };
   return (
-      <div>
-      <div className="Title"><h2></h2></div>
-      <div className="imagecontainer">
-        <img className="image"src={data.url} alt="image"/>
+    <div>
+      <div className="Title">
+        <h1>{data.name}</h1>
       </div>
-      <div>
-      <h3>Courses</h3>
+      <div className="Body">
+        <div className="About">
+          <dl>
+            <dt>
+              <h3>About us</h3>
+            </dt>
+            <dd>
+              <p className="paragraph">&emsp;{data.para}</p>
+            </dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>
+              <h3>Course List</h3>
+            </dt>
+            <dd>
+              {data.Degree.map((item) => {
+                return <Mapping item={item} />;
+              })}
+            </dd>
+          </dl>
+        </div>
+        <div className="loc">
+          <dl>
+            <dt>
+              <h3>Contact us</h3>
+            </dt>
+            <dd>
+              <LocationOnTwoToneIcon font-size="large" />
+              <a href={data.map} target="_blank">{data.address}</a>
+            </dd>
+            <dd>
+              <CallTwoToneIcon font-size="medium" />
+              {data.num}
+            </dd>
+            <dd>
+              <LanguageTwoToneIcon font-size="medium" />
+              <a href={data.link} target="_blank">{data.sort}</a>
+            </dd>
+          </dl>
+        </div>
       </div>
-      {data.Degree.map((item) => {return <Mapping item={item}/>})}
     </div>
-  )
+  );
 }
 
 export default DegList;

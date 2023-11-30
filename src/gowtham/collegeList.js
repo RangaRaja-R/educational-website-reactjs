@@ -23,7 +23,7 @@ export default function ClgList() {
             <p className="courseprice">Rank:{item.rank}</p>
           </div>
             <p className="courseauthor">
-              <a href={item.map}>{item.district}</a>
+            {item.district}
             </p>
           </div>
         </div>
