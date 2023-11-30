@@ -4,6 +4,11 @@ import Button from "@mui/material/Button";
 function CourseDetails(props) {
   return (
     <div className="details">
+      <div className="back">
+        <Button variant="outlined" color="success" onClick={props.toggle}>
+          back
+        </Button>
+      </div>
       <div className="top">
         <div className="detailstitlecontainer">
           <h1 className="detailstitle">{props.item.name}</h1>
@@ -22,7 +27,7 @@ function CourseDetails(props) {
             </Button>
           </div>
         </div>
-        <div className="courseimagecontainer" onClick={props.toggle}>
+        <div className="courseimagecontainer">
           <img
             className="detailimage"
             src={props.item.img}

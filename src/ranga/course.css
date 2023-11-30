@@ -82,6 +82,11 @@
   background-color: #fafafa;
 }
 
+.back {
+  text-align: left;
+  margin: 2px 4px;
+}
+
 .top {
   background-color: #58dd98;
   display: flex;
