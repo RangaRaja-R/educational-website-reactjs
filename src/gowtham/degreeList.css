@@ -1,0 +1,26 @@
+.image {
+  height: 300px;
+  width: 500px;
+  align-items: center;
+}
+.coursetitlecontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: top;
+}
+.coursecontainer:hover {
+  box-shadow: 2px 2px 15px;
+}
+
+.courseimagecontainer {
+  margin: 5px 0px;
+}
+.courseimagex {
+  float: left;
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
