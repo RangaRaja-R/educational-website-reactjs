@@ -1,0 +1,34 @@
+[
+  {
+    "name": "python",
+    "details": "fundamentals of python",
+    "longdetails": "fundamentals of python and a lot and a lotand a lotand a lotand a lotand a lotand a lotand a lotand a lotand a lotand a lotand a lotand a lotand a lotand a lot",
+    "author": "swayam",
+    "authorLink": "https://swayam.gov.in/",
+    "price": 0,
+    "img": "https://www.ntuclearninghub.com/documents/39367/4216797/Python-Symbol.png/369e410e-a90f-f887-c2dc-61f7ef761476/",
+    "learn": ["fundamentals of python", "basics"],
+    "requirement": [],
+    "experience": "beginner",
+    "languages": ["english"],
+    "duration": "2 weeks",
+    "courseLayout": ["something", "something"],
+    "link": "https://www.google.com"
+  },
+  {
+    "name": "java",
+    "details": "fundamentals of java",
+    "longdetails": "fundamentals of java",
+    "author": "swayam",
+    "authorLink": "https://swayam.gov.in/",
+    "price": 10,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLEhkzJgoJCZ4p-rT-2L5thU8eb_rd6pi-Hw&usqp=CAU",
+    "learn": ["fundamentals of java", "basics"],
+    "requirement": ["cpp"],
+    "experience": "beginner",
+    "languages": ["english", "tamil"],
+    "duration": "4 weeks",
+    "courseLayout": ["something", "something"],
+    "link": "https://www.google.com"
+  }
+]
