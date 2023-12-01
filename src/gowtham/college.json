@@ -7,21 +7,15 @@
     "district": "Coimbatore",
     "rank": "77",
     "num": " 0422 267 8001",
-    "sort": "Skcet",
+    "short": "SKCET",
     "link": "https://www.skcet.ac.in/",
     "address": "Bk Pudur,Kuniamuthur,Coimbatore-641008",
     "mail": "skcet2012@gmail.com",
     "para": "Sri Krishna College of Engineering and Technology is the most sought after Institution among the premier technical Institutions in South India. Since its establishment in the year 1998, the Institution has marched towards the pinnacle of glory through its remarkable achievements in the field of Engineering Education. It is an Autonomous Institution, accredited with ‘A’ Grade (3.42 out of 4 scale) by NAAC and 7 programmes being accredited by NBA and it offers 11 UG programmes, 8 PG programmes, 1 integrated programme and 4 research programmes. The Institution offers an exciting academic environment with well qualified 354 dedicated faculty members to inspire and nurture the student fraternity. With industry drafted Choice Based Credit System (CBCS) curriculum and syllabi, the Institution takes every effort to bring its students to the forefront of the society as skillful and responsible engineers.",
     "Degree": [
       { "name": "B.E. Computer Science and  Engineering (Cyber Security)" },
-
-      {
-        "name": "B.E. Mechanical Engineering"
-      },
-
-      {
-        "name": "B.E. Civil Engineering"
-      }
+      { "name": "B.E. Mechanical Engineering" },
+      { "name": "B.E. Civil Engineering" }
     ]
   },
   {
@@ -31,7 +25,7 @@
     "map": "https://maps.app.goo.gl/MJ4P6p8EZC2Bsssx9",
     "district": "Coimbatore",
     "rank": "101",
-    "sort": "Cit",
+    "short": "CIT",
     "num": "91- 422 – 2574071",
     "link": "https://www.cit.edu.in/",
     "address": "Hope College,Coimbatore-641004",
@@ -50,7 +44,7 @@
     "map": "https://maps.app.goo.gl/MJ4P6p8EZC2Bsssx9",
     "district": "Coimbatore",
     "rank": "107",
-    "sort": "Kct",
+    "short": "KCT",
     "num": "0422 266 1100",
     "link": "https://www.kct.ac.in/",
     "mail": "info@kct.ac.in",
@@ -58,8 +52,7 @@
     "para": "Kumaraguru College of Technology (KCT), Coimbatore is a private Engineering College started in 1984 under the auspices of Ramanandha Adigalar Foundation, a charitable educational trust of Sakthi Group. Situated in a sprawling 156-acre campus in the IT corridor of Coimbatore, KCT is an autonomous institution affiliated to the Anna University, Chennai and approved by All India Council for Technical Education (AICTE). KCT was granted Five Year Accreditation status in its first cycle of accreditation. Later, in the second cycle, with a CGPA of 3.21 on 4.0 scale, A Grade was awarded which was valid till 02 December 2021. In July 2022, following the NAAC Peer Team visit for third cycle of accreditation, KCT has been awarded A++ Grade, the highest grade awarded to institutions by NAAC with KCT securing a CGPA of 3.62 on a 4 – point scale. And all the eligible UG programs have also been accredited by National Board of Accreditation (NBA).",
     "Degree": [
       { "name": "B.E. Computer Science and  Engineering (Cyber Security)" },
-      { "name": "B.E. Mechanical Engineering" },
-      { "name": "B.E. Civil Engineering" }
+      { "name": "B.E. Mechanical Engineering" }
     ]
   },
   {
@@ -67,9 +60,9 @@
     "url": "https://www.psgtech.edu/images/logo-G2-New.png",
     "code": "2006",
     "map": "https://maps.app.goo.gl/MJ4P6p8EZC2Bsssx9",
-    "district": "Coimbatore",
+    "district": "Chennai",
     "rank": "63",
-    "sort": "Psg",
+    "short": "PSG",
     "num": "0422-4303300",
     "link": "https://www.psgtech.edu/",
     "mail": "dean.admn@psgtech.ac.in",

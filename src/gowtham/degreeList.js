@@ -27,7 +27,7 @@ function DegList({ d }) {
   };
   return (
     <div>
-      <div className="back">
+      <div className="clgdetback">
         <Button variant="outlined" color="success" onClick={handeClick}>
           back
         </Button>

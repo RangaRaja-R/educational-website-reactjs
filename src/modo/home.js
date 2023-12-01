@@ -5,7 +5,7 @@ function Home() {
     <div>
       <div className="list">
         <div className="listheader">
-          <h1>government colleges list</h1>
+          <h1>TNEA colleges list</h1>
           <h2>list of colleges</h2>
           <Button
             variant="contained"
@@ -20,8 +20,8 @@ function Home() {
       </div>
       <div className="list">
         <div className="listheader">
-          <h1>TNEA counselling colleges list</h1>
-          <h2>list of colleges</h2>
+          <h1>Courses</h1>
+          <h2>list of courses</h2>
           <Button
             variant="contained"
             href="/course-list"
