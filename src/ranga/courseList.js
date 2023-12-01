@@ -2,6 +2,7 @@ import Course from "./course";
 import CourseDetails from "./courseDetails";
 import { useState } from "react";
 import courses from "./course.json";
+import { Button } from "@mui/material";
 
 function Courses() {
   const [Details, setDetails] = useState(false);
@@ -20,6 +21,11 @@ function Courses() {
   }
   return (
     <div>
+      <div className="back">
+        <Button variant="outlined" href="/" color="success">
+          back
+        </Button>
+      </div>
       {courses.map((item, index) => {
         return <Course item={item} toggle={() => handleToggle(index)} />;
       })}
