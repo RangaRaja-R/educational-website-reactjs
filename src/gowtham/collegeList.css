@@ -1,4 +1,4 @@
-.coursecontainer {
+.crscontainer {
   background-color: #f2f5fa;
   font-family: "Open Sans", sans-serif;
   margin: 5px auto;
@@ -10,57 +10,58 @@
   border-radius: 13px;
 }
 
-.coursecontainer:hover {
-  box-shadow: 2px 2px 15px;
+.crscontainer:hover {
+  box-shadow: 2px 2px 15px #14a44d;
 }
 
-.courseimagecontainer {
+.crsimg {
   margin: 5px 0px;
 }
 
-.courseimage {
+.imagee {
   float: left;
+  height: 150px;
   width: 150px;
-  height: 110px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
   margin: 5px 0px;
 }
 
-.coursecontainer .courseimage {
+.crscontainer .imagee {
   box-shadow: 0.5px 1px 1px;
 }
 
-.coursedetailscontainer {
+.crsdetailscontainer {
   width: 100%;
   margin: 5px;
   align-items: left;
   align-content: left;
   text-align: left;
 }
-.coursetitlecontainer {
+.crstitlecontainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   text-align: top;
 }
 
-.coursetitle {
-  font-size: 20px;
-  color: #5867dd;
+.crstitle {
+  font-size: 25px;
+  color: black;
   margin-bottom: 8px;
   margin-top: 3px;
-  min-height: 120px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
-.courseprice {
+.crsprice {
   font-size: 16px;
   margin-top: 4px;
   margin-bottom: 8px;
   margin-right: 5px;
 }
 
-.coursedetails {
+.crsdetails {
   font-weight: bold;
   font-size: 14px;
   line-height: 15px;
@@ -70,12 +71,12 @@
   max-width: 900px;
 }
 
-.courseauthor {
+.crsauthor {
   font-size: smaller;
   margin-top: 0.5px;
   color: rgb(151, 141, 141);
   bottom: 10%;
 }
 .code {
-  text-align: center;
+  padding-left: 20px;
 }
