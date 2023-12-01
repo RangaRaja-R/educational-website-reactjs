@@ -21,10 +21,13 @@ function Courses() {
   }
   return (
     <div>
-      <div className="back">
+      <div className="backbutton">
         <Button variant="outlined" href="/" color="success">
           back
         </Button>
+      </div>
+      <div className="heading">
+        <h2>Courses</h2>
       </div>
       {courses.map((item, index) => {
         return <Course item={item} toggle={() => handleToggle(index)} />;

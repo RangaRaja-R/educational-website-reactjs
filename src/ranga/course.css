@@ -1,13 +1,24 @@
+.heading {
+  background-color: #58dd98;
+  text-align: left;
+  padding: 8px;
+  padding-left: 20px;
+  margin-right: 240px;
+  margin-left: 240px;
+  border-radius: 10px;
+  font-size: xx-large;
+}
 .coursecontainer {
   background-color: #f2f5fa;
   font-family: "Open Sans", sans-serif;
   margin: 5px auto;
   padding: 5px;
-  width: 50%;
+  margin-left: 300px;
+  margin-right: 300px;
   display: flex;
   align-items: left;
   justify-content: left;
-  border-radius: 13px;
+  border-radius: 10px;
 }
 
 .coursecontainer:hover {
@@ -83,9 +94,9 @@
   background-color: #fafafa;
 }
 
-.back {
-  text-align: left;
-  margin: 2px 4px;
+.backbutton {
+  padding-left: 240px;
+  padding-top: 50px;
 }
 
 .top {

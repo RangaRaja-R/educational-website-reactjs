@@ -16,7 +16,7 @@ export default function ClgList() {
         </Button>
       </div>
       <div className="headerr">
-        <h2>College List</h2>
+        <h2>Colleges</h2>
       </div>
       {data.map((item, index) => (
         <div className="crscontainer" onClick={() => HandleClick(index)}>
@@ -29,9 +29,9 @@ export default function ClgList() {
                 <h3 className="crstitle">{item.name}</h3>
                 <h3 className="code">Code:{item.code}</h3>
               </div>
-              <p className="crseprice">Rank:{item.rank}</p>
+              <p className="crsprice">Rank:{item.rank}</p>
             </div>
-            <p className="crseauthor">{item.district}</p>
+            <p className="crsauthor">{item.district}</p>
           </div>
         </div>
       ))}

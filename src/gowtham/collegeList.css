@@ -1,13 +1,24 @@
+.headerr {
+  background-color: #58dd98;
+  text-align: left;
+  padding: 8px;
+  padding-left: 20px;
+  margin-left: 240px;
+  margin-right: 240px;
+  border-radius: 10px;
+  font-size: xx-large;
+}
 .crscontainer {
   background-color: #f2f5fa;
   font-family: "Open Sans", sans-serif;
-  margin: 5px auto;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 10px;
   padding: 5px;
-  width: 50%;
   display: flex;
   align-items: left;
   justify-content: left;
-  border-radius: 13px;
+  border-radius: 10px;
 }
 
 .crscontainer:hover {
@@ -73,10 +84,15 @@
 
 .crsauthor {
   font-size: smaller;
+  margin-left: 20px;
   margin-top: 0.5px;
   color: rgb(151, 141, 141);
   bottom: 10%;
 }
 .code {
   padding-left: 20px;
+}
+.back {
+  padding-left: 240px;
+  padding-top: 50px;
 }
