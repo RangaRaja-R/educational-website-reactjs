@@ -1,0 +1,147 @@
+.coursecontainer {
+  background-color: #f2f5fa;
+  font-family: "Open Sans", sans-serif;
+  margin: 5px auto;
+  padding: 5px;
+  width: 50%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  border-radius: 13px;
+}
+
+.coursecontainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 24px;
+}
+
+.courseimagecontainer {
+  margin: 5px 0px;
+}
+
+.courseimage {
+  float: left;
+  width: 150px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
+
+.coursecontainer .courseimage {
+  box-shadow: 0.5px 1px 1px;
+}
+
+.coursedetailscontainer {
+  width: 100%;
+  margin: 5px;
+  align-items: left;
+  align-content: left;
+  text-align: left;
+}
+.coursetitlecontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coursetitle {
+  font-size: 24px;
+  color: #5867dd;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.courseprice {
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+
+.coursedetails {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 15px;
+  max-height: min-content;
+  letter-spacing: -0.02em;
+  color: rgb(107, 119, 209);
+  max-width: 900px;
+}
+
+.courseauthor {
+  font-size: smaller;
+  margin-top: 0.5px;
+  color: rgb(151, 141, 141);
+}
+
+.details {
+  margin: 30px;
+  padding: 15px;
+  display: grid;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.back {
+  text-align: left;
+  margin: 2px 4px;
+}
+
+.top {
+  background-color: #58dd98;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  max-height: 400px;
+  border-radius: 10px;
+}
+
+.detailstitlecontainer {
+  display: grid;
+  align-items: left;
+  text-align: left;
+  padding: 15px;
+}
+
+.detailstitlecontainer .courseauthor {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.detailstitle {
+  font-size: 40px;
+  text-align: left;
+  margin: 3px 10px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.detailimage {
+  float: left;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
+
+.lancontainer {
+  text-align: left;
+  margin-left: 25px;
+  font-style: bold;
+}
+
+.enrollcontainer {
+  width: 40px;
+  margin: 0px 20px;
+}
+
+.detailsdetails {
+  text-align: left;
+}
+
+.detailsdetails .layout {
+  margin-left: 30px;
+}

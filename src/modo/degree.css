@@ -1,0 +1,25 @@
+.desc {
+  font-size: x-large;
+  text-align: left;
+  background-color: whitesmoke;
+  padding: 8px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+.branch {
+  background-color: #a7ecc2;
+  text-align: left;
+  padding: 8px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-size: xx-large;
+}
+.items {
+  max-width: 1000px;
+}
+dt {
+  font-size: x-large;
+}
