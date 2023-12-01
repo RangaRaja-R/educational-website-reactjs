@@ -1,0 +1,103 @@
+[
+  {
+    "name": "An Introduction to Artificial Intelligence",
+    "details": "A guide for undergraduate students in AI",
+    "longdetails": "The course introduces the variety of concepts in the field of artificial intelligence. It discusses the philosophy of AI, and how to model a new problem as an AI problem. It describes a variety of models such as search, logic, Bayes nets, and MDPs, which can be used to model a new problem. It also teaches many first algorithms to solve each formulation. The course prepares a student to take a variety of focused, advanced courses in various subfields of AI.",
+    "author": "Swayam",
+    "authorLink": "https://swayam.gov.in/",
+    "free": true,
+    "img": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nou23_cs14/AI-CoursePic.jpg",
+    "requirement": [" Data Structures", "Probability"],
+    "languages": ["English"],
+    "duration": "12 weeks",
+    "courseLayout": [
+      "Introduction: Philosophy of AI, Definitions",
+      "Modeling a Problem as Search Problem, Uninformed Search",
+      "Heuristic Search, Domain Relaxations",
+      "Local Search, Genetic Algorithms",
+      "Adversarial Search",
+      "Constraint Satisfaction",
+      "Propositional Logic & Satisfiability",
+      "Uncertainty in AI, Bayesian Networks",
+      "Bayesian Networks Learning & Inference, Decision Theory",
+      "Markov Decision Processes",
+      "Reinforcement Learning",
+      "Introduction to Deep Learning & Deep RL"
+    ],
+    "link": "https://onlinecourses.nptel.ac.in/noc24_cs08/preview"
+  },
+  {
+    "name": "Blockchain and its Applications",
+    "details": "",
+    "longdetails": "In the last few years, Blockchain technology has generated massive interest among governments, enterprises, and academics, because of its capability of providing a transparent, secured, tamper-proof solution for interconnecting different stakeholders in a trustless setup. In January 2021, the Ministry of Electronics and Information Technology (MeiTY), Government of India, published the first draft of the \"National Strategy on Blockchain\" that highlights 17 potential applications that are of national interest. Against this backdrop, this subject will cover the basic design principles of Blockchain technology and its applications over different sectors. Additionally, the course also provides tutorials on setting up blockchain applications using one of the well-adopted permissionless blockchain platforms - Ethereum, and one permissioned blockchain platform - Hyperledger.",
+    "author": "Swayam",
+    "authorLink": "https://swayam.gov.in/",
+    "free": true,
+    "img": "https://storage.googleapis.com/swayam2-node/Jan2022_Course_card_image/noc22-cs44.png",
+    "requirement": [
+      "Computer Networks",
+      "Operating Systems",
+      "Cryptography and Network Security"
+    ],
+    "languages": ["English"],
+    "duration": "12 weeks",
+    "courseLayout": [
+      "Introduction to Blockchain Technology and its Importance",
+      "Basic Crypto Primitives I – Cryptographic Hash",
+      "Basic Crypto Primitives II – Digital Signature",
+      "Evolution of the Blockchain Technology",
+      "Elements of a Blockchain",
+      "Blockchain Consensus I – Permissionless Models",
+      "Blockchain Consensus II – Permissioned Models",
+      "Smart Contract Hands On I – Ethereum Smart Contracts (Permissionless Model)",
+      "Smart Contract Hand On II – Hyperledger Fabric (Permissioned Model)",
+      "Decentralized Identity Management",
+      "Blockchain Interoperability",
+      "Blockchain Applications"
+    ],
+    "link": "https://onlinecourses.nptel.ac.in/noc24_cs15/preview"
+  },
+  {
+    "name": "Python with IIT Certification",
+    "details": "",
+    "longdetails": "Whether you have never programmed before, already know basic syntax, or want to learn about the advanced features of Python, this course is for you! This free Python course will give you that core, solid understanding of the Python programming language. You will not only be learning Python, but you will be learning industry best practices for Python programming that real employers demand. Python is a popular programming language used across industries, from tech to finance, and can help you land jobs in data analysis, software development, and more. With our beginner-friendly curriculum, you'll be able to confidently use Python in everyday applications and understand its potential for advanced programming. Plus, with a Python IIT certification, you'll have a valuable credential to showcase on your resume.",
+    "author": "GUVI",
+    "authorLink": "https://www.guvi.in/",
+    "free": true,
+    "img": "https://static.guvi.in/course-thumbnail/webps/python.webp",
+    "requirement": [],
+    "languages": ["English", "Hindi", "Tamil", "Odiya", "Arabic"],
+    "duration": "6 Hrs",
+    "courseLayout": [
+      "Beginer - Course Overview, Why Python, Python IDE, Hello World Program, Numbers and Math Functions, Common Errors in Python",
+      "Intermidiate - Variables & Names, String Basics, Conditional Statements, Functions, For and While Loop",
+      "Advanced - Functions as Arguments, List, Tuple, Dictionaries, List Comprehension, File Handling, Debugging in Python, Class and Objects",
+      "Expert -  Lambda, Filters and Map, Python PIP, Read Excel Data in Python, Python MySQL, Iterators, Pickling, Python JSON"
+    ],
+    "link": "https://www.guvi.in/courses/programming/python/"
+  },
+  {
+    "name": "Microsoft Cybersecurity Analyst Professional Certificate",
+    "details": "",
+    "longdetails": "Launch your career as a cybersecurity analyst. Build job-ready skills for an in-demand career in the field of cybersecurity in as little as 6 months. No prior experience required to get started.",
+    "author": "Coursera",
+    "authorLink": "https://www.coursera.org/",
+    "free": false,
+    "img": "https://cdn-icons-png.flaticon.com/512/732/732221.png",
+    "requirement": [],
+    "languages": ["English"],
+    "duration": "6 months (at 10hr/week)",
+    "courseLayout": [
+      "Introduction to Computers and Operating Systems and Security",
+      "Introduction to Networking and Cloud Computing",
+      "Cybersecurity Threat Vectors and Mitigation",
+      "Cybersecurity Identity and Access Solutions using Azure AD",
+      "Cybersecurity Solutions and Microsoft Defender",
+      "Cybersecurity Tools and Technologies",
+      "Cybersecurity Management and Compliance",
+      "Advanced Cybersecurity Concepts and Capstone Project",
+      "Microsoft SC-900 Exam Preparation and Practice"
+    ],
+    "link": "https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+  }
+]
