@@ -36,13 +36,13 @@ function CourseDetails(props) {
         </div>
       </div>
       <div className="detailsdetails">
-        <h4>Description:</h4>
+        <h4>Description</h4>
         <p>{props.item.longdetails}</p>
       </div>
       <div className="detailsdetails">
-        <h4>Pre Requirstics: </h4>
+        <h4>Prerequisite </h4>
         {props.item.requirement.length === 0 ? (
-          <p>none</p>
+          <p>None</p>
         ) : (
           <p className="layout">
             {props.item.requirement.map((i) => (
@@ -52,7 +52,7 @@ function CourseDetails(props) {
         )}
       </div>
       <div className="detailsdetails">
-        <h4>Layout: </h4>
+        <h4>Layout </h4>
         <p className="layout">
           {props.item.courseLayout.map((i) => (
             <li>{i}</li>

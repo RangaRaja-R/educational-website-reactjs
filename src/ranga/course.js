@@ -1,7 +1,6 @@
 import "./course.css";
 
 function Course(props) {
-  const free = props.item.price === 0;
   return (
     <div className="coursecontainer" onClick={props.toggle}>
       <div className="courseimagecontainer">
@@ -14,10 +13,10 @@ function Course(props) {
       <div className="coursedetailscontainer">
         <div className="coursetitlecontainer">
           <h3 className="coursetitle">{props.item.name}</h3>
-          {free ? (
+          {props.item.free ? (
             <p className="courseprice">Free</p>
           ) : (
-            <p className="courseprice">${props.item.price}</p>
+            <p className="courseprice">Paid</p>
           )}
         </div>
         <p className="coursedetails">{props.item.details}</p>

@@ -48,7 +48,7 @@
   font-size: 24px;
   color: #5867dd;
   margin-bottom: 8px;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 
 .courseprice {
@@ -114,6 +114,10 @@
   margin: 3px 10px;
 }
 
+h4 {
+  font-size: 25px;
+}
+
 .detailimage {
   float: left;
   width: 300px;
@@ -126,6 +130,7 @@
 .lancontainer {
   text-align: left;
   margin-left: 25px;
+  font-style: bold;
 }
 
 .enrollcontainer {
