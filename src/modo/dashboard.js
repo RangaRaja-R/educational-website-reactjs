@@ -1,17 +1,9 @@
 import * as React from "react";
 import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import MuiDrawer from "@mui/material/Drawer";
-import Box from "@mui/material/Box";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import Sheet from "@mui/joy/Sheet";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import { inline } from "@floating-ui/core";
-import { TextField } from "@mui/material";
+import Navigate from "../navigator";
 import "./dashboard.css";
 
 function Copyright(props) {
@@ -57,15 +49,10 @@ const AppBar = styled(MuiAppBar, {
 const defaultTheme = createTheme();
 
 export default function Dashboard() {
-  const [open, setOpen] = React.useState(false);
-  const toggleDrawer = () => {
-    setOpen(!open);
-  };
-
   return (
     <ThemeProvider theme={defaultTheme}>
       <div className="dashh">
-        <AppBar position="absolute" open={open} color="success">
+        <AppBar position="absolute" open={false} color="success">
           <div className="dash" color="inherit">
             <h2>Educational information sevai</h2>
           </div>
@@ -83,26 +70,7 @@ export default function Dashboard() {
           }}
         >
           <Toolbar />
-          <div className="list">
-            <div className="listheader">
-              <h1>government colleges list</h1>
-              <h2>list of colleges</h2>
-              <Button variant="contained" color="success" size="small">
-                Go
-              </Button>
-            </div>
-            <div className="photo"></div>
-          </div>
-          <div className="list">
-            <div className="listheader">
-              <h1>TNEA counselling colleges list</h1>
-              <h2>list of colleges</h2>
-              <Button variant="contained" color="success" size="small">
-                Go
-              </Button>
-            </div>
-            <div className="photo"></div>
-          </div>
+          <Navigate />
           <Copyright sx={{ pt: 4 }} />
         </div>
       </div>

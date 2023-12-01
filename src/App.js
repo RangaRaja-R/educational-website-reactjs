@@ -11,13 +11,7 @@ import Courses from "./ranga/courseList";
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<ClgList />} />
-          <Route path="/DegreeList/:id" element={<DegList d={data} />} />
-          {console.log(data[0])}
-        </Routes>
-      </BrowserRouter>
+      <Dashboard />
     </div>
   );
 }
