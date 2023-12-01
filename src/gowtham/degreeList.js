@@ -13,10 +13,13 @@ function DegList({ d }) {
   const handeClick = () => {
     navi("/college-list");
   };
-  const Mapping = ({ item }) => {
+  const handleGo = (id) => {
+    navi(`/degree-details/${id}`);
+  };
+  const Mapping = ({ item, toggle }) => {
     return (
       <div>
-        <div className="coursecontainer">
+        <div className="coursecontainer" onClick={toggle}>
           <p>{item.name}</p>
         </div>
       </div>
@@ -49,8 +52,8 @@ function DegList({ d }) {
               <h3>Course List</h3>
             </dt>
             <dd>
-              {data.Degree.map((item) => {
-                return <Mapping item={item} />;
+              {data.Degree.map((item, index) => {
+                return <Mapping item={item} toggle={() => handleGo(index)} />;
               })}
             </dd>
           </dl>

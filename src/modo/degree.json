@@ -30,36 +30,6 @@
     ]
   },
   {
-    "branch": "Civil",
-    "about": "The BE Civil Engineering deals with the construction, design, and maintenance of building structures, tunnels, bridges, airports, etc. This course develops a student with the capability of planning, analyzing, and designing a project.",
-    "jobs": [
-      "Construction manager",
-      "Project manager",
-      "Civil Engineer",
-      "Surveryor",
-      "CAD Technician",
-      "Building Engineer"
-    ],
-    "responsibilities": [
-      "Analyze photographs, drawings and maps to inform the direction of projects as well as the overall budget constraints",
-      "Ensure project feasibility through continual evaluation of structural integrity and design practicality",
-      "Create designs that utilize a variety of materials",
-      "Perform and adjust quantity calculations for practical and budgetary purposes",
-      "Communicate with team members as well as customers and vendors to ensure maximum cohesion and fluidity on projects",
-      "Forecast design and construction time frames",
-      "Inspect project sites to ensure they meet relevant codes and are progressing properly"
-    ],
-    "qualifications": [
-      "Proven working experience in civil engineering",
-      "Excellent knowledge of design and visualizations software such as AutoCAD,Civil 3D or similar",
-      "Proficiency in site layout, grading, utility design, erosion control, regulatory approvals etc",
-      "Project management and supervision skills",
-      "Strong communication and interpersonal skills",
-      "License of professional engineer",
-      "BS/MA in Civil Engineering"
-    ]
-  },
-  {
     "branch": "Mechanical",
     "about": "A Mechanical Engineer designs machines like generators and engines, including applications such as elevators. They also develop machinery like refrigeration systems for grocery store food storage areas.",
     "jobs": [
@@ -90,6 +60,36 @@
       "Familiarity with 2D or 3D engineering design and manufacturing tools (e.g., AutoCAD, ProE or other)",
       "Adequate knowledge of engineering analysis tools (ANSYS, ProMechanica or similar)",
       "Mathematical computing and analysis tools knowledge (Matlab, Excel, LabView etc)"
+    ]
+  },
+  {
+    "branch": "Civil",
+    "about": "The BE Civil Engineering deals with the construction, design, and maintenance of building structures, tunnels, bridges, airports, etc. This course develops a student with the capability of planning, analyzing, and designing a project.",
+    "jobs": [
+      "Construction manager",
+      "Project manager",
+      "Civil Engineer",
+      "Surveryor",
+      "CAD Technician",
+      "Building Engineer"
+    ],
+    "responsibilities": [
+      "Analyze photographs, drawings and maps to inform the direction of projects as well as the overall budget constraints",
+      "Ensure project feasibility through continual evaluation of structural integrity and design practicality",
+      "Create designs that utilize a variety of materials",
+      "Perform and adjust quantity calculations for practical and budgetary purposes",
+      "Communicate with team members as well as customers and vendors to ensure maximum cohesion and fluidity on projects",
+      "Forecast design and construction time frames",
+      "Inspect project sites to ensure they meet relevant codes and are progressing properly"
+    ],
+    "qualifications": [
+      "Proven working experience in civil engineering",
+      "Excellent knowledge of design and visualizations software such as AutoCAD,Civil 3D or similar",
+      "Proficiency in site layout, grading, utility design, erosion control, regulatory approvals etc",
+      "Project management and supervision skills",
+      "Strong communication and interpersonal skills",
+      "License of professional engineer",
+      "BS/MA in Civil Engineering"
     ]
   }
 ]
