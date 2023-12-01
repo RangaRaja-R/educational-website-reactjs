@@ -13,7 +13,7 @@ function Navigate() {
         <Route index element={<Home />} />
         <Route path="/course-list" element={<Courses />} />
         <Route path="/college-list" element={<ClgList />} />
-        <Route path="/DegreeList/:id" element={<DegList d={data} />} />
+        <Route path="/degree-list/:id" element={<DegList d={data} />} />
         <Route path="/degree-details/:id" element={<Degree />} />
       </Routes>
     </BrowserRouter>

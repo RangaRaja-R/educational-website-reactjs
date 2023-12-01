@@ -6,7 +6,7 @@ import "./collegeList.css";
 export default function ClgList() {
   const navi = useNavigate();
   const HandleClick = (id) => {
-    navi(`/DegreeList/${id}`);
+    navi(`/degree-list/${id}`);
   };
   return (
     <div>
