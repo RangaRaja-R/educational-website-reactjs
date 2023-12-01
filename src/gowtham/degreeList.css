@@ -1,4 +1,3 @@
-
 .coursetitlecontainer {
   display: flex;
   justify-content: space-between;
@@ -8,9 +7,7 @@
 .coursecontainer:hover {
   box-shadow: 2px 2px 15px;
   color: #14a44d;
-
 }
-
 
 .courseimagex {
   float: left;
@@ -20,11 +17,10 @@
   border-radius: 8px;
   margin: 5px 0px;
 }
-a{
+a {
   text-decoration: none;
 }
-.Title
-{
+.Title {
   background-color: #a7ecc2;
   text-align: left;
   padding: 8px;
@@ -34,8 +30,7 @@ a{
   border-radius: 10px;
   font-size: xx-large;
 }
-.Body
-{
+.Body {
   font-size: x-large;
   text-align: left;
   background-color: whitesmoke;
@@ -44,7 +39,6 @@ a{
   margin-right: 50px;
   border-radius: 10px;
 }
-.paragraph
-{
+.paragraph {
   font-size: small;
 }
