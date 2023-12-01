@@ -2,6 +2,7 @@ import React from "react";
 import degree from "./degree.json";
 import "./degree.css";
 import { useParams } from "react-router";
+import { Button } from "@mui/material";
 
 function Degree() {
   const params = useParams();
@@ -10,6 +11,11 @@ function Degree() {
   return (
     <div>
       <div className="details">
+        <div className="backend">
+          <Button variant="outlined" color="success" href="/college-list">
+            Back
+          </Button>
+        </div>
         <div className="branch">
           <h1>{item.branch}</h1>
         </div>
@@ -19,7 +25,7 @@ function Degree() {
               <dt>
                 <h2>Description</h2>
               </dt>
-              <dd>{item.about}</dd>
+              <dd className="about">{item.about}</dd>
             </dl>
           </div>
           <dl>

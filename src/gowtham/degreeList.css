@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 .Title {
-  background-color: #a7ecc2;
+  background-color: #58dd98;
   text-align: left;
   padding: 8px;
   margin-left: 50px;
@@ -40,6 +40,5 @@ a {
   border-radius: 10px;
 }
 .paragraph {
-  font-size: small;
+  font-size: 2px;
 }
-
