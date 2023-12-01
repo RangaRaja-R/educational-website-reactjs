@@ -6,6 +6,7 @@ import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
 import LocationOnTwoToneIcon from "@mui/icons-material/LocationOnTwoTone";
 import { Button } from "@mui/material";
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 function DegList({ d }) {
   const navi = useNavigate();
   const params = useParams();
@@ -25,6 +26,15 @@ function DegList({ d }) {
       </div>
     );
   };
+  useEffect(() => {
+    window.addEventListener("keyup", function (event) {
+      event.preventDefault();
+
+      if (event.key === "Escape" || event.keyCode === 27) {
+        navi("/college-list");
+      }
+    });
+  }, []);
   return (
     <div>
       <div className="clgdetback">

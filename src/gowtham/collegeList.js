@@ -2,15 +2,12 @@ import * as React from "react";
 import { Button, TextField } from "@mui/material";
 import d from "./college.json";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./collegeList.css";
 import SearchIcon from "@mui/icons-material/Search";
 
 export default function ClgList() {
   const navi = useNavigate();
-  const HandleClick = (id) => {
-    navi(`/degree-list/${id}`);
-  };
   const [data, setData] = useState(d);
   const [q, setq] = useState("");
   function handleSubmit(e) {
@@ -34,6 +31,18 @@ export default function ClgList() {
       setData(d);
     }
   }
+  const HandleClick = (id) => {
+    navi(`/degree-list/${id}`);
+  };
+  useEffect(() => {
+    window.addEventListener("keyup", function (event) {
+      event.preventDefault();
+
+      if (event.key === "Escape" || event.keyCode === 27) {
+        navi("/");
+      }
+    });
+  }, []);
   return (
     <div>
       <div className="back">
@@ -58,7 +67,9 @@ export default function ClgList() {
               }
             }}
           />
-          <Button type="submit" endIcon={<SearchIcon />} />
+          <Button type="submit">
+            <SearchIcon />
+          </Button>
         </form>
       </div>
       {data.length === 0 ? (

@@ -1,10 +1,22 @@
+import { useNavigate } from "react-router-dom";
 import "./course.css";
+import { useEffect } from "react";
 import Button from "@mui/material/Button";
 
 function CourseDetails(props) {
+  const navi = useNavigate();
+  useEffect(() => {
+    window.addEventListener("keyup", function (event) {
+      event.preventDefault();
+
+      if (event.key === "Escape" || event.keyCode === 27) {
+        navi("/college-list");
+      }
+    });
+  }, []);
   return (
     <div className="details">
-      <div className="back">
+      <div className="crsdetback">
         <Button variant="outlined" color="success" onClick={props.toggle}>
           back
         </Button>

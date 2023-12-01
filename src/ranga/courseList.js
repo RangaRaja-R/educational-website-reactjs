@@ -1,14 +1,17 @@
 import Course from "./course";
 import CourseDetails from "./courseDetails";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import c from "./course.json";
 import { Button, TextField } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
+import { useNavigate } from "react-router-dom";
 
 function Courses() {
   const [courses, setCourses] = useState(c);
   const [Details, setDetails] = useState(false);
   const [current_index, setCurrent_index] = useState(0);
   const [q, setq] = useState("");
+  const navi = useNavigate();
   function handleSubmit(e) {
     e.preventDefault();
     if (q) {
@@ -30,6 +33,17 @@ function Courses() {
   function handleToggleBack() {
     setDetails(false);
   }
+  useEffect(() => {
+    window.addEventListener("keyup", function (event) {
+      event.preventDefault();
+
+      if (event.key === "Escape" || event.keyCode === 27) {
+        if (!Details) {
+          navi("/");
+        }
+      }
+    });
+  }, []);
   if (Details) {
     return (
       <CourseDetails item={courses[current_index]} toggle={handleToggleBack} />
@@ -59,7 +73,9 @@ function Courses() {
               }
             }}
           />
-          <Button type="submit">search</Button>
+          <Button type="submit">
+            <SearchIcon />
+          </Button>
         </form>
       </div>
       {courses.length === 0 ? (

@@ -1,11 +1,22 @@
 import React from "react";
 import degree from "./degree.json";
 import "./degree.css";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { Button } from "@mui/material";
+import { useEffect } from "react";
 
 function Degree() {
   const params = useParams();
+  const navi = useNavigate();
+  useEffect(() => {
+    window.addEventListener("keyup", function (event) {
+      event.preventDefault();
+
+      if (event.key === "Escape" || event.keyCode === 27) {
+        navi("/college-list");
+      }
+    });
+  }, []);
   const id = parseInt(params.id) < degree.length ? parseInt(params.id) : 0;
   const item = degree[id];
   return (
