@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+  height: 150px;
+}
+.listheader {
+  margin-left: 10%;
+  text-align: left;
+  font-size: larger;
+  width: 50%;
+}
+.photo {
+  margin-top: 15px;
+  width: 50%;
+}
+.copy {
+  display: inherit;
+}
