@@ -1,5 +1,5 @@
 import * as React from "react";
-import CardMedia from "@mui/material/CardMedia";
+import { Button } from "@mui/material";
 import data from "./college.json";
 import { useNavigate } from "react-router-dom";
 import "./collegeList.css";
@@ -10,6 +10,11 @@ export default function ClgList() {
   };
   return (
     <div>
+      <div className="back">
+        <Button variant="outlined" color="success" href="/">
+          back
+        </Button>
+      </div>
       <div className="headerr">
         <h2>College List</h2>
       </div>
