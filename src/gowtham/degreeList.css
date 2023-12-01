@@ -1,0 +1,44 @@
+.coursetitlecontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: top;
+}
+.coursecontainer:hover {
+  box-shadow: 2px 2px 15px;
+  color: #14a44d;
+}
+
+.courseimagex {
+  float: left;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
+a {
+  text-decoration: none;
+}
+.Title {
+  background-color: #a7ecc2;
+  text-align: left;
+  padding: 8px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-size: xx-large;
+}
+.Body {
+  font-size: x-large;
+  text-align: left;
+  background-color: whitesmoke;
+  padding: 8px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+.paragraph {
+  font-size: small;
+}
