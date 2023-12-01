@@ -3,11 +3,15 @@ import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
 import "./degreeList.css";
 import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
 import LocationOnTwoToneIcon from "@mui/icons-material/LocationOnTwoTone";
-import { useParams } from "react-router-dom";
+import { Button } from "@mui/material";
+import { useParams, useNavigate } from "react-router-dom";
 function DegList({ d }) {
+  const navi = useNavigate();
   const params = useParams();
-  console.log(params);
   const data = d[parseInt(params.id)];
+  const handeClick = () => {
+    navi("/college-list");
+  };
   const Mapping = ({ item }) => {
     return (
       <div>
@@ -19,6 +23,11 @@ function DegList({ d }) {
   };
   return (
     <div>
+      <div className="back">
+        <Button variant="outlined" color="success" onClick={handeClick}>
+          back
+        </Button>
+      </div>
       <div className="Title">
         <h1>{data.name}</h1>
       </div>

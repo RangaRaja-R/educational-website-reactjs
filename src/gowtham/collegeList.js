@@ -5,16 +5,16 @@ import { useNavigate } from "react-router-dom";
 import "./collegeList.css";
 export default function ClgList() {
   const navi = useNavigate();
-  const HandleClick = () => {
-    navi("/DegreeList");
+  const HandleClick = (id) => {
+    navi(`/DegreeList/${id}`);
   };
   return (
     <div>
       <div className="headerr">
         <h2>College List</h2>
       </div>
-      {data.map((item) => (
-        <div className="crscontainer" onClick={HandleClick}>
+      {data.map((item, index) => (
+        <div className="crscontainer" onClick={() => HandleClick(index)}>
           <div className="crsimg">
             <img className="imagee" src={item.url} alt="img" />
           </div>
