@@ -2,7 +2,7 @@ import Course from "./course";
 import CourseDetails from "./courseDetails";
 import { useState } from "react";
 import c from "./course.json";
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 
 function Courses() {
   const [courses, setCourses] = useState(c);
@@ -44,23 +44,31 @@ function Courses() {
       </div>
       <div className="heading">
         <h2>Courses</h2>
+        <form onSubmit={handleSubmit}>
+          <TextField
+            variant="standard"
+            type="text"
+            val={q}
+            label="Search"
+            onChange={(e) => {
+              setq(e.target.value);
+              if (!e.target.value) {
+                setCourses(c);
+              } else {
+                handleSubmit(e);
+              }
+            }}
+          />
+          <Button type="submit">search</Button>
+        </form>
       </div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          val={q}
-          onChange={(e) => {
-            setq(e.target.value);
-            if (!e.target.value) {
-              setCourses(c);
-            }
-          }}
-        />
-        <Button type="submit">search</Button>
-      </form>
-      {courses.map((item, index) => {
-        return <Course item={item} toggle={() => handleToggle(index)} />;
-      })}
+      {courses.length === 0 ? (
+        <h3 style={{ textAlign: "center" }}>Search Not Found</h3>
+      ) : (
+        courses.map((item, index) => {
+          return <Course item={item} toggle={() => handleToggle(index)} />;
+        })
+      )}
     </div>
   );
 }

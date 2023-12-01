@@ -76,7 +76,7 @@ function DegList({ d }) {
             <dd>
               <LanguageTwoToneIcon font-size="medium" />
               <a href={data.link} target="_blank">
-                {data.sort}
+                {data.short}
               </a>
             </dd>
             <dd>
