@@ -1,4 +1,5 @@
 import React from "react";
+import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
 import "./degreeList.css";
 import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
@@ -64,6 +65,12 @@ function DegList({ d }) {
               <LanguageTwoToneIcon font-size="medium" />
               <a href={data.link} target="_blank">
                 {data.sort}
+              </a>
+            </dd>
+            <dd>
+              <EmailTwoToneIcon font-size="medium" />
+              <a href={data.mail} target="_blank">
+                {data.mail}
               </a>
             </dd>
           </dl>
