@@ -70,7 +70,6 @@ export default function Dashboard() {
           }}
         >
           <Toolbar />
-          <Navigate />
           <Copyright sx={{ pt: 4 }} />
         </div>
       </div>

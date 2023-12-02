@@ -5,11 +5,10 @@ import data from "./gowtham/college.json";
 import Home from "./modo/home";
 import ClgList from "./gowtham/collegeList";
 import Degree from "./modo/degree";
-import { HashRouter } from "react-router-dom";
 
 function Navigate() {
   return (
-    <BrowserRouter basename="/educational-website-reactjs">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course-list" element={<Courses />} />
