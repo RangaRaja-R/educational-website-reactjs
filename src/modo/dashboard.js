@@ -2,28 +2,7 @@ import * as React from "react";
 import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Link from "@mui/material/Link";
-import Navigate from "../navigator";
 import "./dashboard.css";
-
-function Copyright(props) {
-  return (
-    <div
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-      className="copy"
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://www.naanmudhalvan.tn.gov.in/">
-        naanmudhalvan
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </div>
-  );
-}
 
 const drawerWidth = 240;
 
@@ -70,7 +49,6 @@ export default function Dashboard() {
           }}
         >
           <Toolbar />
-          <Copyright sx={{ pt: 4 }} />
         </div>
       </div>
     </ThemeProvider>
