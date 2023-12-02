@@ -34,6 +34,7 @@ function Courses() {
     setDetails(false);
   }
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener("keyup", function (event) {
       event.preventDefault();
 

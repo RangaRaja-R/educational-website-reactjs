@@ -1,12 +1,18 @@
 .list {
   display: flex;
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  height: 150px;
+  width: auto;
+  background-color: #f2f5fa;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  /* margin-bottom: 40px; */
+  padding: 20px;
+  /* height: 150px; */
 }
+
 .listheader {
-  margin-left: 10%;
+  margin-left: 5%;
   text-align: left;
   font-size: larger;
   width: 50%;

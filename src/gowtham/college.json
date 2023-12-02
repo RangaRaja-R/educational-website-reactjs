@@ -13,9 +13,12 @@
     "mail": "skcet2012@gmail.com",
     "para": "Sri Krishna College of Engineering and Technology is the most sought after Institution among the premier technical Institutions in South India. Since its establishment in the year 1998, the Institution has marched towards the pinnacle of glory through its remarkable achievements in the field of Engineering Education. It is an Autonomous Institution, accredited with ‘A’ Grade (3.42 out of 4 scale) by NAAC and 7 programmes being accredited by NBA and it offers 11 UG programmes, 8 PG programmes, 1 integrated programme and 4 research programmes. The Institution offers an exciting academic environment with well qualified 354 dedicated faculty members to inspire and nurture the student fraternity. With industry drafted Choice Based Credit System (CBCS) curriculum and syllabi, the Institution takes every effort to bring its students to the forefront of the society as skillful and responsible engineers.",
     "Degree": [
-      { "name": "B.E. Computer Science and  Engineering (Cyber Security)" },
-      { "name": "B.E. Mechanical Engineering" },
-      { "name": "B.E. Civil Engineering" }
+      {
+        "id": 0,
+        "name": "B.E. Computer Science and  Engineering (Cyber Security)"
+      },
+      { "id": 1, "name": "B.E. Mechanical Engineering" },
+      { "id": 2, "name": "B.E. Civil Engineering" }
     ]
   },
   {
@@ -32,9 +35,12 @@
     "mail": "ao@cit.edu.in",
     "para": "Coimbatore Institute of Technology (CIT) is an autonomous government-aided institution. Affiliated with Anna University, Chennai, it is recognised by the AICTE and has been awarded an ‘A’ Grade by NAAC and also by the National Board of Accreditation (NBA). Established in 1956 by the V Rangaswamy Naidu Educational Trust (VRET), Coimbatore Institute of Technology offers UG, PG and Integrated MSc programmes as well as doctoral programmes.",
     "Degree": [
-      { "name": "B.E. Computer Science and  Engineering (Cyber Security)" },
-      { "name": "B.E. Mechanical Engineering" },
-      { "name": "B.E. Civil Engineering" }
+      {
+        "id": 0,
+        "name": "B.E. Computer Science and  Engineering (Cyber Security)"
+      },
+      { "id": 1, "name": "B.E. Mechanical Engineering" },
+      { "id": 2, "name": "B.E. Civil Engineering" }
     ]
   },
   {
@@ -51,8 +57,11 @@
     "address": "Chinnavedampatti, Coimbatore – 641 049",
     "para": "Kumaraguru College of Technology (KCT), Coimbatore is a private Engineering College started in 1984 under the auspices of Ramanandha Adigalar Foundation, a charitable educational trust of Sakthi Group. Situated in a sprawling 156-acre campus in the IT corridor of Coimbatore, KCT is an autonomous institution affiliated to the Anna University, Chennai and approved by All India Council for Technical Education (AICTE). KCT was granted Five Year Accreditation status in its first cycle of accreditation. Later, in the second cycle, with a CGPA of 3.21 on 4.0 scale, A Grade was awarded which was valid till 02 December 2021. In July 2022, following the NAAC Peer Team visit for third cycle of accreditation, KCT has been awarded A++ Grade, the highest grade awarded to institutions by NAAC with KCT securing a CGPA of 3.62 on a 4 – point scale. And all the eligible UG programs have also been accredited by National Board of Accreditation (NBA).",
     "Degree": [
-      { "name": "B.E. Computer Science and  Engineering (Cyber Security)" },
-      { "name": "B.E. Mechanical Engineering" }
+      {
+        "id": 0,
+        "name": "B.E. Computer Science and  Engineering (Cyber Security)"
+      },
+      { "id": 1, "name": "B.E. Mechanical Engineering" }
     ]
   },
   {
@@ -69,9 +78,12 @@
     "address": "Pelamedu,Coimbatore-641004",
     "para": "The College was established in the year 1951 and the Founders wisely decided to locate it in the same campus as the PSG Industrial Institute for effective industry-institute interaction. The PSG College of Technology is situated at about 8 km from Coimbatore Railway Station and 5 km from Airport.",
     "Degree": [
-      { "name": "B.E. Computer Science and  Engineering (Cyber Security)" },
-      { "name": "B.E. Mechanical Engineering" },
-      { "name": "B.E. Civil Engineering" }
+      {
+        "id": 0,
+        "name": "B.E. Computer Science and  Engineering (Cyber Security)"
+      },
+      { "id": 1, "name": "B.E. Mechanical Engineering" },
+      { "id": 2, "name": "B.E. Civil Engineering" }
     ]
   }
 ]

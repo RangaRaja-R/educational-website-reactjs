@@ -1,11 +1,12 @@
 import { Button } from "@mui/material";
+import "./dashboard.css";
 
 function Home() {
   return (
     <div>
       <div className="list">
         <div className="listheader">
-          <h1>TNEA colleges list</h1>
+          <h1>TNEA Colleges</h1>
           <h2>list of colleges</h2>
           <Button
             variant="contained"
@@ -16,7 +17,6 @@ function Home() {
             Go
           </Button>
         </div>
-        <div className="photo"></div>
       </div>
       <div className="list">
         <div className="listheader">
@@ -31,7 +31,6 @@ function Home() {
             Go
           </Button>
         </div>
-        <div className="photo"></div>
       </div>
     </div>
   );

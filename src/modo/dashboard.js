@@ -54,7 +54,7 @@ export default function Dashboard() {
       <div className="dashh">
         <AppBar position="absolute" open={false} color="success">
           <div className="dash" color="inherit">
-            <h2>Educational information sevai</h2>
+            <h1>Educational Seva</h1>
           </div>
         </AppBar>
         <div

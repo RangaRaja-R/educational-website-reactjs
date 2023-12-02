@@ -10,6 +10,9 @@ export default function ClgList() {
   const navi = useNavigate();
   const [data, setData] = useState(d);
   const [q, setq] = useState("");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   function handleSubmit(e) {
     e.preventDefault();
     if (q) {
@@ -18,6 +21,7 @@ export default function ClgList() {
           item.name.toLowerCase().includes(q.toLowerCase()) ||
           item.district.toLowerCase().includes(q.toLowerCase()) ||
           item.short.toLowerCase().includes(q.toLowerCase()) ||
+          item.code.toLowerCase().includes(q.toLowerCase()) ||
           item.Degree.map((item) => {
             return item.name;
           })

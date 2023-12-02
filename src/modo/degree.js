@@ -9,6 +9,7 @@ function Degree() {
   const params = useParams();
   const navi = useNavigate();
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener("keyup", function (event) {
       event.preventDefault();
 
@@ -61,7 +62,7 @@ function Degree() {
           </dl>
           <dl>
             <dt>
-              <h2>Qualifications</h2>
+              <h2>Skills</h2>
             </dt>
             <dd>
               {item.qualifications.map((items) => (

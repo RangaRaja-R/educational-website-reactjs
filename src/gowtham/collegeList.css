@@ -1,6 +1,9 @@
 .headerr {
   background-color: #58dd98;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 8px;
   padding-left: 20px;
   margin-left: 240px;

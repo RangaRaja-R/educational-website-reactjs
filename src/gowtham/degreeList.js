@@ -27,6 +27,7 @@ function DegList({ d }) {
     );
   };
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener("keyup", function (event) {
       event.preventDefault();
 
@@ -62,8 +63,8 @@ function DegList({ d }) {
               <h3>Course List</h3>
             </dt>
             <dd>
-              {data.Degree.map((item, index) => {
-                return <Mapping item={item} toggle={() => handleGo(index)} />;
+              {data.Degree.map((item) => {
+                return <Mapping item={item} toggle={() => handleGo(item.id)} />;
               })}
             </dd>
           </dl>

@@ -6,11 +6,12 @@ import Button from "@mui/material/Button";
 function CourseDetails(props) {
   const navi = useNavigate();
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener("keyup", function (event) {
       event.preventDefault();
 
       if (event.key === "Escape" || event.keyCode === 27) {
-        navi("/college-list");
+        navi("/course-list");
       }
     });
   }, []);
