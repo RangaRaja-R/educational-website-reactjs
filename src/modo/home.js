@@ -10,7 +10,7 @@ function Home() {
           <h2>list of colleges</h2>
           <Button
             variant="contained"
-            href="/college-list"
+            href="/educational-website-reactjs/college-list"
             color="success"
             size="small"
           >

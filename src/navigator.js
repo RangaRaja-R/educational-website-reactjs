@@ -9,15 +9,15 @@ import { HashRouter } from "react-router-dom";
 
 function Navigate() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/educational-website-reactjs">
       <Routes>
-        <Route path="/" element={<Home />} basename={process.env.PUBLIC_URL} />
+        <Route path="/" element={<Home />} />
         <Route path="/course-list" element={<Courses />} />
         <Route path="/college-list" element={<ClgList />} />
         <Route path="/degree-list/:id" element={<DegList d={data} />} />
         <Route path="/degree-details/:id" element={<Degree />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
