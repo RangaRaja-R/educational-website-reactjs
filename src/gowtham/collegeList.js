@@ -6,9 +6,14 @@ import { useState, useEffect } from "react";
 import "./collegeList.css";
 import SearchIcon from "@mui/icons-material/Search";
 
+function ord(a, b) {
+  return a.name.localeCompare(b.name);
+}
+
 export default function ClgList() {
   const navi = useNavigate();
   const [data, setData] = useState(d);
+  data.sort(ord);
   const [q, setq] = useState("");
   useEffect(() => {
     window.scrollTo(0, 0);

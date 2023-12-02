@@ -6,8 +6,13 @@ import { Button, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { useNavigate } from "react-router-dom";
 
+function ord(a, b) {
+  return a.name.localeCompare(b.name);
+}
+
 function Courses() {
   const [courses, setCourses] = useState(c);
+  courses.sort(ord);
   const [Details, setDetails] = useState(false);
   const [current_index, setCurrent_index] = useState(0);
   const [q, setq] = useState("");
