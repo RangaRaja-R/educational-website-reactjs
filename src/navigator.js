@@ -10,7 +10,7 @@ function Navigate() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} basename={process.env.PUBLIC_URL} />
         <Route path="/course-list" element={<Courses />} />
         <Route path="/college-list" element={<ClgList />} />
         <Route path="/degree-list/:id" element={<DegList d={data} />} />
