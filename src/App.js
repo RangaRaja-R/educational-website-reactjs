@@ -20,7 +20,7 @@ function Copyright(props) {
       {...props}
       className="copy"
     >
-      {"This Page was Created by "}
+      {"Created by "}
       <Link
         color="inherit"
         href="https://www.linkedin.com/in/rangaraja-r"
