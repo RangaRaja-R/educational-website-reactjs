@@ -13,7 +13,16 @@ import Link from "@mui/material/Link";
 function Copyright(props) {
   return (
     <div
-      style={{ marginTop: "15px" }}
+      style={{
+        marginTop: "15px",
+        position: "fixed",
+        bottom: "0px",
+        textDecoration: "none",
+        textAlign: "center",
+        width: "100%",
+        backgroundColor: "rgba(245, 245, 245, 0.1)",
+        backdropFilter: "blur(1px)",
+      }}
       variant="body2"
       color="text.secondary"
       align="center"

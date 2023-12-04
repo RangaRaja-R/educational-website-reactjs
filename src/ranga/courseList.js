@@ -84,13 +84,15 @@ function Courses() {
           </Button>
         </form>
       </div>
-      {courses.length === 0 ? (
-        <h3 style={{ textAlign: "center" }}>Search Not Found</h3>
-      ) : (
-        courses.map((item, index) => {
-          return <Course item={item} toggle={() => handleToggle(index)} />;
-        })
-      )}
+      <div style={{ display: "inline" }}>
+        {courses.length === 0 ? (
+          <h3 style={{ textAlign: "center" }}>Search Not Found</h3>
+        ) : (
+          courses.map((item, index) => {
+            return <Course item={item} toggle={() => handleToggle(index)} />;
+          })
+        )}
+      </div>
     </div>
   );
 }
