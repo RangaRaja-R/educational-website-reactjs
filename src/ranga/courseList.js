@@ -58,7 +58,7 @@ function Courses() {
   return (
     <div>
       <div className="backbutton">
-        <Button variant="outlined" href="/" color="success">
+        <Button variant="outlined" href="#/" color="success">
           back
         </Button>
       </div>

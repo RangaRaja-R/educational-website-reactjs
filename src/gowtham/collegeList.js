@@ -55,7 +55,7 @@ export default function ClgList() {
   return (
     <div>
       <div className="back">
-        <Button variant="outlined" color="success" href="/">
+        <Button variant="outlined" color="success" href="#/">
           back
         </Button>
       </div>
