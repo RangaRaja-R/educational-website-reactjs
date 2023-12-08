@@ -21,7 +21,7 @@ function Degree() {
   const id = parseInt(params.id) < degree.length ? parseInt(params.id) : 0;
   const item = degree[id];
   return (
-    <div>
+    <div className="degree">
       <div className="details">
         <div className="backend">
           <Button variant="outlined" color="success" href="/college-list">

@@ -37,7 +37,7 @@ function DegList({ d }) {
     });
   }, []);
   return (
-    <div>
+    <div className="college-details">
       <div className="clgdetback">
         <Button variant="outlined" color="success" onClick={handeClick}>
           back

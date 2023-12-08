@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Dashboard from "./modo/dashboard";
+// import Dashboard from "./modo/dashboard";
 import { Routes, Route } from "react-router-dom";
 import Courses from "./ranga/courseList";
 import DegList from "./gowtham/degreeList";
@@ -9,6 +9,7 @@ import Home from "./modo/home";
 import ClgList from "./gowtham/collegeList";
 import Degree from "./modo/degree";
 import Link from "@mui/material/Link";
+import Dashboard from "./modo/tempDash";
 
 function Copyright(props) {
   return (

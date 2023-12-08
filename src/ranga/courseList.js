@@ -56,7 +56,7 @@ function Courses() {
     );
   }
   return (
-    <div>
+    <div className="course-list">
       <div className="backbutton">
         <Button variant="outlined" href="#/" color="success">
           back

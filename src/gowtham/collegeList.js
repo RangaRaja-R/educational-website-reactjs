@@ -53,7 +53,7 @@ export default function ClgList() {
     });
   }, []);
   return (
-    <div>
+    <div className="college-list">
       <div className="back">
         <Button variant="outlined" color="success" href="#/">
           back

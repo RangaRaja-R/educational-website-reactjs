@@ -3,7 +3,7 @@ import "./dashboard.css";
 
 function Home() {
   return (
-    <div>
+    <div className="main">
       <div className="list">
         <div className="listheader">
           <h1>TNEA Colleges</h1>
