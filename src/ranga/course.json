@@ -66,7 +66,7 @@
     "free": true,
     "img": "https://static.guvi.in/course-thumbnail/webps/python.webp",
     "requirement": [],
-    "languages": ["English", "Hindi", "Tamil", "Odiya", "Arabic"],
+    "languages": ["English", "Hindi", "Tamil", "Odiya", "Arabic", "Telugu"],
     "duration": "6 Hrs",
     "courseLayout": [
       "Beginer - Course Overview, Why Python, Python IDE, Hello World Program, Numbers and Math Functions, Common Errors in Python",
@@ -99,5 +99,102 @@
       "Microsoft SC-900 Exam Preparation and Practice"
     ],
     "link": "https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+  },
+  {
+    "name": "Java for Beginners",
+    "details": "Learn how to build highly scalable software applications using Java and master all of its core concepts",
+    "longdetails": "Master all the basics of Java programming and learn to code like a pro with the best Java for a course that has been designed and taught by industry experts with years of experience in tech. Throughout this Java online course, you will learn major Java concepts such as object-oriented programming (OOP) using Java, JSP, Servlets, and MySQL, along with design principles, best coding practices, and how to write code like a professional developer. You will be able to implement all that you learn with real-world projects and build a great portfolio that will help you excel at interviews. After completing this Java course for beginners, you will gain a certificate that will help your resume stand out from others when applying for developer roles.",
+    "author": "GUVI",
+    "authorLink": "https://www.guvi.in/",
+    "free": true,
+    "img": "https://static.guvi.in/course-thumbnail/webps/java.webp",
+    "requirement": [],
+    "languages": ["English"],
+    "duration": "11 Hours",
+    "courseLayout": [
+      "History and features of Java",
+      "Architecture of Java Virtual Machine (JVM)",
+      "Java conditional statements",
+      "Java loops and arrays",
+      "Java class and object",
+      "Java methods and constructors",
+      "Java inheritance and polymorphism",
+      "Java exception handling",
+      "Java arrays and collections",
+      "Java file handling",
+      "Java networking",
+      "Java GUI"
+    ],
+    "link": "https://www.guvi.in/courses/programming/java-beginners/"
+  },
+  {
+    "name": "Python Zero to Hero",
+    "details": "Master the most and we really do mean THE MOST used and always in high-demand programming language ever: Python",
+    "longdetails": "Master the core concepts of coding with Python in this expert course crafted and taught by top industry mentors with years of professional coding experience, who know and train the kind of quality coders that top companies hire. In this course, you will be taught many basic as well as advanced concepts such as Comments in Python and Docstrings, Datatypes and Built-in datatypes, Defining and Calling a Function, Returning Results, MRO, Polymorphism, Overloading, Overriding, Errors and Exception Handling, Thread Communications and much more by implementing them practically as you learn to write top-grade Python code on our award-winning practice platforms by yourself throughout the course. You will gain proficiency in all these concepts by implementing them first-hand with various practice quizzes and top coding hacks that you can flaunt in your technical interviews to impress future employers. Upon completion, you will also be awarded a globally-recognized certificate, endorsing the skills you have acquired.",
+    "author": "GUVI",
+    "authorLink": "https://www.guvi.in/",
+    "free": false,
+    "img": "https://static.guvi.in/course-thumbnail/webps/python.webp",
+    "requirement": ["Basics of the Python programming language"],
+    "languages": ["English"],
+    "duration": "6 Hours",
+    "courseLayout": [
+      "Advanced python programming",
+      "Python data structures",
+      "Python file handling",
+      "Python networking"
+    ],
+    "link": "https://www.guvi.in/courses/programming/python-zero-to-hero/"
+  },
+  {
+    "name": "Blockchain",
+    "details": "Gain the knowledge of key concepts in Blockchain technology like Cryptocurrency transactions, Bitcoin, blockchain development frameworks & more through this comprehensive course.",
+    "longdetails": "With this Blockchain certification course, you will understand this revolutionizing technology from a business perspective with real business use cases of huge corporations such as IBM, Honeywell Aerospace, and Walmart which will be taught by industry experts. You will learn about all the essential concepts of Blockchain such as Distributed Ledger, P2P blocks, Immutability, Provenance, Decentralisation, Smart Contracts, and Inclusivity. This Blockchain course will help learners venture into designing and building industry-grade blockchain products and solutions. Additionally, this course is completely self-paced and you will earn a globally recognized certificate upon its completion.",
+    "author": "Guvi",
+    "authorLink": "https://www.guvi.in/",
+    "free": false,
+    "img": "https://static.guvi.in/course-thumbnail/webps/blockchain.webp",
+    "requirement": [],
+    "languages": ["English", "Hindi", "Tamil", "Telugu"],
+    "duration": "4 Hours",
+    "courseLayout": [
+      "Introduction to Blockchain",
+      "Blockchain Business Opportunities/Demand",
+      "Understanding Data Distribution, Synchronization and Integrity",
+      "Understanding Blocks, Blockchain, Immutability, DLT",
+      "Introduction to IBM Food Trust",
+      "IBM Food Trust - Technology Overview",
+      "IBM Food Trust - Technology in detail",
+      "Understanding Smart contracts",
+      "Peers, nodes and permissioned blockchain"
+    ],
+    "link": "https://www.guvi.in/courses/web-3-0/blockchain/"
+  },
+  {
+    "name": "Artificial Intelligence: Knowledge Representation And Reasoning",
+    "details": "",
+    "longdetails": "An intelligent agent needs to be able to solve problems in its world. The ability to create representations of the domain of interest and reason with these representations is a key to intelligence. In this course we explore a variety of representation formalisms and the associated algorithms for reasoning. We start with a simple language of propositions, and move on to first order logic, and then to representations for reasoning about action, change, situations, and about other agents in incomplete information situations. This course is a companion to the course “Artificial Intelligence: Search Methods for Problem Solving” that was offered recently and the lectures for which are available online. ",
+    "author": "Swayam",
+    "authorLink": "https://www.swayam.gov.in/",
+    "free": true,
+    "img": "https://storage.googleapis.com/swayam2-node/Jan%202020%20Course%20card%20images/noc20_cs30.jpg",
+    "requirement": [],
+    "languages": ["English"],
+    "duration": "12 weeks",
+    "courseLayout": [
+      "Week 1: Introduction. History and Philosophy. ",
+      "Week 2: Symbolic Reasoning. Truth, Logic, and Provability.",
+      "Week 3: Propositional Logic. Direct Proofs. The Tableau Method.",
+      "Week 4: First Order Logic. Universal Instantiation. The Unification Algorithm.",
+      "Week 5: Forward and Backward Chaining. The Resolution Refutation Method.",
+      "Week 6: Horn Clauses and Logic Programming. Prolog.",
+      "Week 7: Rule Based Systems. The OPS5 Language. The Rete Algorithm.",
+      "Week 8: Representation in First Order Logic. Conceptual Dependency.",
+      "Week 9: Frames. Description Logics and the Web Ontology Language",
+      "Week 10: Taxonomies and Inheritance. Default Reasoning. ",
+      "Week 11: Circumscription. Auto-epistemic Reasoning. Event Calculus",
+      "Week 12: Epistemic Logic. Knowledge and Belief."
+    ],
+    "link": "https://onlinecourses.nptel.ac.in/noc24_cs14/preview"
   }
 ]

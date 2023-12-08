@@ -64,7 +64,7 @@
 .coursetitle {
   font-size: 24px;
   color: black;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   margin-top: 8px;
 }
 
@@ -77,12 +77,10 @@
 }
 
 .coursedetails {
-  font-weight: bold;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 15px;
   max-height: min-content;
-  letter-spacing: -0.02em;
   max-width: 900px;
 }
 
