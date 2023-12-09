@@ -18,8 +18,12 @@ function Degree() {
       }
     });
   }, []);
-  const id = parseInt(params.id) < degree.length ? parseInt(params.id) : 0;
-  const item = degree[id];
+  let item = degree[0];
+  if (parseInt(params.id) >= degree.length) {
+    navi("/degree-details/0");
+  } else {
+    item = degree[parseInt(params.id)];
+  }
   return (
     <div className="degree">
       <div className="details">
@@ -65,7 +69,7 @@ function Degree() {
               <h2>Skills</h2>
             </dt>
             <dd>
-              {item.qualifications.map((items) => (
+              {item.skills.map((items) => (
                 <li>{items}</li>
               ))}
             </dd>
