@@ -49,7 +49,7 @@ function Copyright(props) {
       {" and "}
       <Link
         color="inherit"
-        href="https://www.linkedin.com/in/gowtham-k-009590261"
+        href="https://www.linkedin.com/in/gowtham-cyber-max"
         target="_blank"
       >
         Gowtham
