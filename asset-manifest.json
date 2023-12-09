@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/educational-website-reactjs/static/css/main.747c4934.css",
-    "main.js": "/educational-website-reactjs/static/js/main.d6a39ab3.js",
+    "main.js": "/educational-website-reactjs/static/js/main.8d0aef73.js",
     "static/js/787.7fc5836d.chunk.js": "/educational-website-reactjs/static/js/787.7fc5836d.chunk.js",
     "index.html": "/educational-website-reactjs/index.html",
     "main.747c4934.css.map": "/educational-website-reactjs/static/css/main.747c4934.css.map",
-    "main.d6a39ab3.js.map": "/educational-website-reactjs/static/js/main.d6a39ab3.js.map",
+    "main.8d0aef73.js.map": "/educational-website-reactjs/static/js/main.8d0aef73.js.map",
     "787.7fc5836d.chunk.js.map": "/educational-website-reactjs/static/js/787.7fc5836d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.747c4934.css",
-    "static/js/main.d6a39ab3.js"
+    "static/js/main.8d0aef73.js"
   ]
 }
