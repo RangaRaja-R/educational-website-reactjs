@@ -16,7 +16,7 @@
       "system assets Protecting systems by defining access privileges",
       "control structures and resources Implementing security improvements"
     ],
-    "qualifications": [
+    "skills": [
       "System administration",
       "Network security",
       "Problem solving",
@@ -53,7 +53,7 @@
       "Alter and modify design to meet requirements and to eliminate malfunctions",
       "Estimate budget and scope of project"
     ],
-    "qualifications": [
+    "skills": [
       "Proven working experience in mechanical engineering",
       " Working experience with product lifecycle management (PLM), finite element analysis (FEA) and computational fluid dynamics (CFD)",
       " Hands-on experience with computer-aided engineering (CAM) and computer-aided manufacturing (CAE)",
@@ -82,7 +82,7 @@
       "Forecast design and construction time frames",
       "Inspect project sites to ensure they meet relevant codes and are progressing properly"
     ],
-    "qualifications": [
+    "skills": [
       "Proven working experience in civil engineering",
       "Excellent knowledge of design and visualizations software such as AutoCAD,Civil 3D or similar",
       "Proficiency in site layout, grading, utility design, erosion control, regulatory approvals etc",
@@ -90,6 +90,71 @@
       "Strong communication and interpersonal skills",
       "License of professional engineer",
       "BS/MA in Civil Engineering"
+    ]
+  },
+  {
+    "branch": "Electronics and Communications Engineering",
+    "about": "Electronics and Communications Engineering (ECE Engineering) involves researching, designing, developing, and testing electronic equipment used in various systems. It also deals with the manufacturing of electronic devices, circuits, and communications equipment. In India, Electronics and Communications Engineering is offered by various colleges at the UG as well as PG level leading to BTech (4 years) and MTech (2 years) degrees respectively. ",
+    "jobs": [
+      "Electronics Engineer",
+      "Communications Engineer",
+      "System Analyst",
+      "Design Engineer",
+      "Desktop Support Engineer",
+      "Control Engineer"
+    ],
+    "responsibilities": [
+      "Do research, design and develop electronic equipment used in different systems",
+      "Look after the manufacturing of communication and broadcast systems",
+      "Conceptualise and design electronic equipment like radio, television, computer",
+      "Develop control and communications systems",
+      "Write usage recommendations",
+      "Test designs in order to ensure efficiency, cost-effectiveness and safety of new prototypes",
+      "Test and evaluate electronic and communication products",
+      "Plan and execute electronics and communication projects"
+    ],
+    "skills": [
+      "Electric circuit knowledge",
+      "Problem solving",
+      "Testing skills",
+      "Strong communication and interpersonal skills",
+      "Innovation",
+      "Mathematics",
+      "Attention to details"
+    ]
+  },
+  {
+    "branch": "Information Technology",
+    "about": "An IT Engineer is a professional who repairs and maintains the hardware to test and resolve problems with software applications. He or she creates computer programs, designs data systems, and oversees the installation. A career as IT Engineer comes with a specialisation in software development. He or she may develop smartphone applications, and physical products utilising computer hardware engineering knowledge. The work responsibilities of an IT Engineer may also include training staff and managing projects. In this article, we will be discussing how to become an IT Engineer in India or how to become an IT Engineer after 10th.",
+    "jobs": [
+      "Information Systems Security Manager",
+      "Mobile Applications Developer",
+      "Database Manager",
+      "Data Architect",
+      "Data Scientist",
+      "IoT solutions architect"
+    ],
+    "responsibilities": [
+      "Meeting with the IT manager to discuss system needs.",
+      "Designing and installing computer hardware configurations.",
+      "Installing software and networking systems.",
+      "Troubleshooting network and software issues.",
+      "Installing high-level software security systems.",
+      "Training staff on newly installed hardware and software systems.",
+      "Fixing hardware, software, and networking issues.",
+      "Responding to general IT requests.",
+      "Ensuring security software is kept up to date.",
+      "Filing monthly reports for the IT Manager."
+    ],
+    "skills": [
+      "Problem-solving skills",
+      "Strong communication and interpersonal skills",
+      "Analytical skills",
+      "Time management skills",
+      "Teamwork skills",
+      "Critical thinking skills",
+      "Creativity skills",
+      "Resourcefulness"
     ]
   }
 ]
