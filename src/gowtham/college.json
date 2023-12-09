@@ -36,8 +36,8 @@
     "para": "Coimbatore Institute of Technology (CIT) is an autonomous government-aided institution. Affiliated with Anna University, Chennai, it is recognised by the AICTE and has been awarded an ‘A’ Grade by NAAC and also by the National Board of Accreditation (NBA). Established in 1956 by the V Rangaswamy Naidu Educational Trust (VRET), Coimbatore Institute of Technology offers UG, PG and Integrated MSc programmes as well as doctoral programmes.",
     "Degree": [
       {
-        "id": 0,
-        "name": "B.E. Computer Science and  Engineering (Cyber Security)"
+        "id": 3,
+        "name": "B.E.  Electronics and Communication Engineering"
       },
       { "id": 1, "name": "B.E. Mechanical Engineering" },
       { "id": 2, "name": "B.E. Civil Engineering" }
