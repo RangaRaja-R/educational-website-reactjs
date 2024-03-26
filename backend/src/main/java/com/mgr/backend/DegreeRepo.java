@@ -1,4 +1,6 @@
 package com.mgr.backend;
 
-public interface DegreeRepo {
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface DegreeRepo extends MongoRepository<DegreeModel, String> {
 }
