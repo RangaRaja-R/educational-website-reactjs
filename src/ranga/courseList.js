@@ -5,6 +5,7 @@ import c from "./course.json";
 import { Button, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function ord(a, b) {
   return a.name.localeCompare(b.name);
@@ -40,6 +41,9 @@ function Courses() {
   }
   useEffect(() => {
     window.scrollTo(0, 0);
+    axios.get("http://localhost:8080/course/get-all").then((response) => {
+      setCourses(response.data);
+    });
     window.addEventListener("keyup", function (event) {
       event.preventDefault();
 

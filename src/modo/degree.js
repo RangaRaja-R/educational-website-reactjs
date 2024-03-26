@@ -1,29 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import degree from "./degree.json";
 import "./degree.css";
 import { useParams, useNavigate } from "react-router";
 import { Button } from "@mui/material";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import axios from "axios";
 
 function Degree() {
   const params = useParams();
   const navi = useNavigate();
+  const loc = useLocation();
+  const [item, setItem] = useState([]);
+  const [jobs, setJobs] = useState([]);
+  const [responsibilities, setResponsibilities] = useState([]);
+  const [skills, setSkills] = useState([]);
   useEffect(() => {
     window.scrollTo(0, 0);
+    axios
+      .get(`http://localhost:8080/degree/get?id=${loc.state.id}`)
+      .then((res) => {
+        setItem(res.data);
+        setJobs(res.data.jobs);
+        setResponsibilities(res.data.responsibilities);
+        setSkills(res.data.skills);
+      });
+
     window.addEventListener("keyup", function (event) {
       event.preventDefault();
-
+      console.log(loc.state);
       if (event.key === "Escape" || event.keyCode === 27) {
         navi("/college-list");
       }
     });
   }, []);
-  let item = degree[0];
-  if (parseInt(params.id) >= degree.length) {
-    navi("/degree-details/0");
-  } else {
-    item = degree[parseInt(params.id)];
-  }
   return (
     <div className="degree">
       <div className="details">
@@ -49,7 +59,7 @@ function Degree() {
               <h2>Jobs</h2>
             </dt>
             <dd>
-              {item.jobs.map((items) => (
+              {jobs.map((items) => (
                 <li>{items}</li>
               ))}
             </dd>
@@ -59,7 +69,7 @@ function Degree() {
               <h2>Responsibilities</h2>
             </dt>
             <dd>
-              {item.responsibilities.map((i) => (
+              {responsibilities.map((i) => (
                 <li>{i}</li>
               ))}
             </dd>
@@ -69,7 +79,7 @@ function Degree() {
               <h2>Skills</h2>
             </dt>
             <dd>
-              {item.skills.map((items) => (
+              {skills.map((items) => (
                 <li>{items}</li>
               ))}
             </dd>

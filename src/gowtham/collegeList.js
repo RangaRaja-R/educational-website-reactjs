@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./collegeList.css";
 import SearchIcon from "@mui/icons-material/Search";
+import axios from "axios";
 
 function ord(a, b) {
   return a.name.localeCompare(b.name);
@@ -12,11 +13,14 @@ function ord(a, b) {
 
 export default function ClgList() {
   const navi = useNavigate();
-  const [data, setData] = useState(d);
+  const [data, setData] = useState([]);
   data.sort(ord);
   const [q, setq] = useState("");
   useEffect(() => {
     window.scrollTo(0, 0);
+    axios.get("http://localhost:8080/college/get-all").then((res) => {
+      setData(res.data);
+    });
   }, []);
   function handleSubmit(e) {
     e.preventDefault();
@@ -85,7 +89,11 @@ export default function ClgList() {
         <h3 style={{ textAlign: "center" }}>Search Not Found</h3>
       ) : (
         data.map((item, index) => (
-          <div className="crscontainer" onClick={() => HandleClick(index)}>
+          <div
+            className="crscontainer"
+            onClick={() => HandleClick(index)}
+            key={index}
+          >
             <div className="crsimg">
               <img className="imagee" src={item.url} alt="img" />
             </div>

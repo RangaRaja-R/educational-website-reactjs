@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
 import "./degreeList.css";
@@ -7,27 +7,37 @@ import LocationOnTwoToneIcon from "@mui/icons-material/LocationOnTwoTone";
 import { Button } from "@mui/material";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-function DegList({ d }) {
+import axios from "axios";
+function DegList() {
   const navi = useNavigate();
   const params = useParams();
-  const data = d[parseInt(params.id)];
+  const [data, setData] = useState([]);
+  const [course_list, setCourses] = useState([]);
+  const [course_id, setId] = useState([]);
   const handeClick = () => {
-    navi("/college-list");
+    navi(-1);
   };
   const handleGo = (id) => {
-    navi(`/degree-details/${id}`);
+    navi(`/degree-details/`, {
+      state: { message: "hello there", id: course_id[id] },
+    });
   };
   const Mapping = ({ item, toggle }) => {
     return (
       <div>
         <div className="coursecontainer" onClick={toggle}>
-          <p>{item.name}</p>
+          <p>{item}</p>
         </div>
       </div>
     );
   };
   useEffect(() => {
     window.scrollTo(0, 0);
+    axios.get("http://localhost:8080/college/get-all").then((res) => {
+      setCourses(res.data[parseInt(params.id)].degree_name);
+      setId(res.data[parseInt(params.id)].degree_id);
+      setData(res.data[parseInt(params.id)]);
+    });
     window.addEventListener("keyup", function (event) {
       event.preventDefault();
 
@@ -63,8 +73,14 @@ function DegList({ d }) {
               <h3>Course List</h3>
             </dt>
             <dd>
-              {data.Degree.map((item) => {
-                return <Mapping item={item} toggle={() => handleGo(item.id)} />;
+              {course_list.map((item, index) => {
+                return (
+                  <Mapping
+                    item={item}
+                    key={index}
+                    toggle={() => handleGo(index)}
+                  />
+                );
               })}
             </dd>
           </dl>
@@ -75,23 +91,23 @@ function DegList({ d }) {
               <h3>Contact us</h3>
             </dt>
             <dd>
-              <LocationOnTwoToneIcon font-size="large" />
+              <LocationOnTwoToneIcon fontSize="large" />
               <a href={data.map} target="_blank">
                 {data.address}
               </a>
             </dd>
             <dd>
-              <CallTwoToneIcon font-size="medium" />
+              <CallTwoToneIcon fontSize="medium" />
               {data.num}
             </dd>
             <dd>
-              <LanguageTwoToneIcon font-size="medium" />
+              <LanguageTwoToneIcon fontSize="medium" />
               <a href={data.link} target="_blank">
                 {data.short}
               </a>
             </dd>
             <dd>
-              <EmailTwoToneIcon font-size="medium" />
+              <EmailTwoToneIcon fontSize="medium" />
               <a href={data.mail} target="_blank">
                 {data.mail}
               </a>

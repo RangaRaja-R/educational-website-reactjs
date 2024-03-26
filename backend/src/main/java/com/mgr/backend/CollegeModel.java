@@ -28,8 +28,24 @@ public class CollegeModel {
     private String para;
 
 
-    private List<String>degree_name;
+    private List<String> degree_name;
     private List<String> degree_id;
+
+    public List<String> getDegree_name() {
+        return degree_name;
+    }
+
+    public void setDegree_name(List<String> degree_name) {
+        this.degree_name = degree_name;
+    }
+
+    public List<String> getDegree_id() {
+        return degree_id;
+    }
+
+    public void setDegree_id(List<String> degree_id) {
+        this.degree_id = degree_id;
+    }
 
     public String getId() {
         return id;
