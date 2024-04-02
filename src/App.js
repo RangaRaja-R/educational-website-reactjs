@@ -9,6 +9,9 @@ import ClgList from "./gowtham/collegeList";
 import Degree from "./modo/degree";
 import Link from "@mui/material/Link";
 import Dashboard from "./modo/tempDash";
+import SignIn from "./modo/signin";
+import SignUp from "./modo/signup";
+
 
 function Copyright(props) {
   return (
@@ -63,6 +66,8 @@ function App() {
     <div>
       <Dashboard />
       <Routes>
+        <Route path="/login" element={<SignIn/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
         <Route path="/" element={<Home />} />
         <Route path="/course-list" element={<Courses />} />
         <Route path="/college-list" element={<ClgList />} />

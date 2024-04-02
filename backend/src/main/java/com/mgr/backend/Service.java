@@ -63,6 +63,7 @@ public class Service {
     public Boolean verify(String user, String pass){
         UserModel u = userRepo.findByUsername(user);
         if(null == u) u = userRepo.findByMail(user);
+        if(null==u) return false;
         return encoder(pass).equals(u.getHash());
     }
 
