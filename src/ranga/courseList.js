@@ -1,7 +1,6 @@
 import Course from "./course";
 import CourseDetails from "./courseDetails";
 import { useState, useEffect } from "react";
-import c from "./course.json";
 import { Button, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +11,7 @@ function ord(a, b) {
 }
 
 function Courses() {
-  const [courses, setCourses] = useState(c);
+  const [courses, setCourses] = useState([]);
   courses.sort(ord);
   const [Details, setDetails] = useState(false);
   const [current_index, setCurrent_index] = useState(0);
@@ -29,7 +28,9 @@ function Courses() {
       });
       setCourses(filtered);
     } else {
-      setCourses(c);
+      axios.get("http://localhost:8080/course/get-all").then((response) => {
+        setCourses(response.data);
+      });
     }
   }
   function handleToggle(id) {
@@ -77,7 +78,11 @@ function Courses() {
             onChange={(e) => {
               setq(e.target.value);
               if (!e.target.value) {
-                setCourses(c);
+                axios
+                  .get("http://localhost:8080/course/get-all")
+                  .then((response) => {
+                    setCourses(response.data);
+                  });
               } else {
                 handleSubmit(e);
               }

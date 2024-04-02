@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import degree from "./degree.json";
 import "./degree.css";
 import { useParams, useNavigate } from "react-router";
 import { Button } from "@mui/material";

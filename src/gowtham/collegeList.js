@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Button, TextField } from "@mui/material";
-import d from "./college.json";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./collegeList.css";
@@ -29,7 +28,7 @@ export default function ClgList() {
         return (
           item.name.toLowerCase().includes(q.toLowerCase()) ||
           item.district.toLowerCase().includes(q.toLowerCase()) ||
-          item.short.toLowerCase().includes(q.toLowerCase()) ||
+          item.short_name.toLowerCase().includes(q.toLowerCase()) ||
           item.code.toLowerCase().includes(q.toLowerCase()) ||
           item.Degree.map((item) => {
             return item.name;
@@ -41,7 +40,9 @@ export default function ClgList() {
       });
       setData(filtered);
     } else {
-      setData(d);
+      axios.get("http://localhost:8080/college/get-all").then((res) => {
+        setData(res.data);
+      });
     }
   }
   const HandleClick = (id) => {
@@ -74,7 +75,11 @@ export default function ClgList() {
             onChange={(e) => {
               setq(e.target.value);
               if (!e.target.value) {
-                setData(d);
+                axios
+                  .get("http://localhost:8080/college/get-all")
+                  .then((res) => {
+                    setData(res.data);
+                  });
               } else {
                 handleSubmit(e);
               }
