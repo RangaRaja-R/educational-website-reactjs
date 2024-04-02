@@ -103,7 +103,7 @@ function DegList() {
             <dd>
               <LanguageTwoToneIcon fontSize="medium" />
               <a href={data.link} target="_blank">
-                {data.short}
+                {data.short_name}
               </a>
             </dd>
             <dd>

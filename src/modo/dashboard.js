@@ -3,6 +3,7 @@ import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import "./dashboard.css";
+import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -28,11 +29,12 @@ const AppBar = styled(MuiAppBar, {
 const defaultTheme = createTheme();
 
 export default function Dashboard() {
+  const navi = useNavigate();
   return (
     <ThemeProvider theme={defaultTheme}>
       <div className="dashh">
         <AppBar position="absolute" open={false} color="success">
-          <div className="dash" color="inherit">
+          <div className="dash" onClick={() => navi("/")} color="inherit">
             <h1>Educational Seva</h1>
           </div>
         </AppBar>

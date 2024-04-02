@@ -54,17 +54,23 @@ public class Service {
     }
 
     public String create_user(UserModel m) {
+        if(userRepo.findByUsername(m.getUsername())!=null || userRepo.findByMail(m.getMail())!=null){
+            return "Username/Mail Already Exist";
+        }
         String pass = m.getHash();
         m.setHash(encoder(pass));
         userRepo.save(m);
         return "Created Succesfully";
     }
 
-    public Boolean verify(String user, String pass){
+    public String verify(String user, String pass){
         UserModel u = userRepo.findByUsername(user);
         if(null == u) u = userRepo.findByMail(user);
-        if(null==u) return false;
-        return encoder(pass).equals(u.getHash());
+        if(null==u) return "User doesn't exist";
+        if(encoder(pass).equals(u.getHash()))
+            return "login successful";
+        else
+            return "Incorrect password";
     }
 
     public List<UserModel> get_users() {

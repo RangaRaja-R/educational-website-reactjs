@@ -8,6 +8,7 @@ import "./dashboard.css";
 const navItems = [
   { name: "Colleges", href: "#/college-list" },
   { name: "Courses", href: "#/course-list" },
+  { name: "Sign In", href: "#/login" },
 ];
 
 const defaultTheme = createTheme();

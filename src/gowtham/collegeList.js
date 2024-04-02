@@ -11,6 +11,7 @@ function ord(a, b) {
 }
 
 export default function ClgList() {
+  // eslint-disable-next-line
   const navi = useNavigate();
   const [data, setData] = useState([]);
   data.sort(ord);

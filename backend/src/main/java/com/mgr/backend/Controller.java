@@ -31,7 +31,7 @@ public class Controller {
     }
 
     @PostMapping("/user/login")
-    public Boolean verify(@RequestBody UserModel m){
+    public String verify(@RequestBody UserModel m){
         return service.verify(m.getUsername(), m.getHash());
     }
 
