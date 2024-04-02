@@ -1,6 +1,7 @@
 package com.mgr.backend;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,4 +24,15 @@ public class Controller {
     public List<CourseModel> display_course(){
         return service.get_course();
     }
+
+    @PostMapping("/user/signup")
+    public String create_acc(@RequestBody UserModel m){
+        return service.create_user(m);
+    }
+
+    @PostMapping("/user/login")
+    public Boolean verify(@RequestBody UserModel m){
+        return service.verify(m.getUsername(), m.getHash());
+    }
+
 }
